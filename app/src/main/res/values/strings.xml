@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ESP8266 Commander One</string>
+    <string name="title_home">Relay Module</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_help">Help</string>
+    <string name="ip_address">IP Address *</string>
+    <string name="port">Port *</string>
+    <string name="friendlyName">Friendly Name *</string>
+    <string name="addRelayModule">Add Relay Module</string>
+    <string name="relays">No. of Relays</string>
+    <string name="relayModulesAdded">Relay Modules Added</string>
+    <string name="newRelayModuleDetails">New Relay Module</string>
+    <string name="selectRelayModule">Select a Relay Module</string>
+    <string name="relayOne">Relay One</string>
+    <string name="relayOn">ON</string>
+    <string name="relayOff">OFF</string>
+    <string name="relayTwo">Relay Two</string>
+    <string name="relayThree">Relay Three</string>
+    <string name="relayFour">Relay Four</string>
+    <string name="status">Status:</string>
+    <string name="relayStatus">Not connected</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.sai.k.esp8266commander.ui.home.HomeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chonburi"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:text="@string/selectRelayModule" />
+
+        <Spinner
+            android:id="@+id/spnRelayModules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_style">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chonburi"
+                android:padding="3dp"
+                android:textAlignment="textEnd"
+                android:text="@string/status"
+                android:layout_weight="2"/>
+            <TextView
+                android:id="@+id/lblRelayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chonburi"
+                android:padding="3dp"
+                android:textAlignment="textStart"
+                android:text="@string/relayStatus"
+                android:layout_weight=".7"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chonburi"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:text="@string/relayOne" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnOneOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOn"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnOneOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOff"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chonburi"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:text="@string/relayTwo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnTwoOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOn"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnTwoOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOff"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chonburi"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:text="@string/relayThree" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnThreeOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOn"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnThreeOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOff"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chonburi"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:text="@string/relayFour" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnFourOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOn"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btnFourOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/relayOff"
+                android:textAllCaps="true"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

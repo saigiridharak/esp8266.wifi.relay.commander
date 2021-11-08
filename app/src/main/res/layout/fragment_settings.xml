@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.sai.k.esp8266commander.ui.settings.SettingsViewModel" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chonburi"
+        android:padding="16dp"
+        android:text="@string/newRelayModuleDetails" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtIpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ip_address"
+            android:text="@{viewModel.relayModule.ipAddress}"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/txtPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/port"
+            android:text="@{String.valueOf(viewModel.relayModule.port)}"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtFriendlyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/friendlyName"
+        android:text="@{viewModel.relayModule.friendlyName}"
+        android:maxLength="20"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/txtRelays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/relays"
+            android:text="@{String.valueOf(viewModel.relayModule.relays)}"
+            android:maxLength="1"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnAddRelayModule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addRelayModule"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chonburi"
+        android:padding="16dp"
+        android:text="@string/relayModulesAdded" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relayModuleListView"
+        tools:listitem="@layout/relaymodule_listitem" />
+</LinearLayout>
+</layout>
